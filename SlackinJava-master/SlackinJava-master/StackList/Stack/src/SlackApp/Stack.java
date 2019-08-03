@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
  *
  * @author V244682
  */
-public class SlackQuene {
+public class Stack {
 
     /**
      * @param args the command line arguments

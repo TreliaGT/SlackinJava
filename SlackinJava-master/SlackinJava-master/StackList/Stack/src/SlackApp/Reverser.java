@@ -11,19 +11,21 @@ package SlackApp;
  */
 public class Reverser {
    String input;
-   StackX stack = new StackX();
+   LinkList list = new LinkList();
     public Reverser (String in){
         input = in;
     }
     
     public String doRev(){
+        int first = 0;
         char[] a = input.toCharArray();
         String output = "";
         for(int i = 0; i < a.length; i++){
-             stack.push(a[i]);
+             list.insertFirst(first, a[i]);
+             first++;
         }
          for(int i = 0; i < a.length; i++){
-             output += stack.pop();
+             output += list.find(i);
         }
       return output;
     }
