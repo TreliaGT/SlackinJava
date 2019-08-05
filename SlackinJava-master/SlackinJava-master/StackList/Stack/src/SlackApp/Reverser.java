@@ -25,7 +25,7 @@ public class Reverser {
              first++;
         }
          for(int i = 0; i < a.length; i++){
-             output += list.find(i);
+             output += list.find(i).toString();
         }
       return output;
     }
