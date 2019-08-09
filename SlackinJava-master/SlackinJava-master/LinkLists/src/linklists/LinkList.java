@@ -65,7 +65,20 @@ public class LinkList {
 			previous.next = current.next; // bypass it
 		return current;
 	}
-	
+	public Link pop() 
+	{ 
+		Link current = first; //
+		Link previous = first;
+		while(current.next != null)
+		{
+			
+                previous = current; // go to next link
+		current = current.next;
+		
+		} 
+                previous.next = null;
+		return current;
+	}
 	//deletes first link
 	public Link deleteFirst()
 	{

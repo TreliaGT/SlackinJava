@@ -35,7 +35,7 @@ public class LinkLists {
                 }
                    Queuelist.displayList();
 		 System.out.println("remove first");
-             
+                    Queuelist.pop();
                     Queuelist.displayList();
                    
                   //Stack Method
