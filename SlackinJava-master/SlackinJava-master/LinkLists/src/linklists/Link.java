@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SlackApp;
+package linklists;
 
 /**
  *
- * @author Trelia
+ * @author V244682
  */
-public class Links {
-    	public int iData; 
-	public char dData; 
-	public Links next; //reference to next link
+public class Link {
+    	public int iData; //data item
+	public double dData; //data item
+	public Link next; //reference to next link
 	
 	
-
-	public Links(int id, char dd)
+	//initialisation of two variables
+	public Link(int id, double dd)
 	{
 		iData = id;
 		dData = dd;
